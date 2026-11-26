@@ -1,0 +1,51 @@
+/* Noor Hijabs - style.css (mobile-first) */
+:root{--plum:#6B2D5C;--text:#2B2030;--cream:#FBF5F0;--rose:#D9A5A0;--sage:#2F6B5A;--gap:1rem}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Arial,sans-serif;font-size:1rem;line-height:1.6;color:var(--text);background:var(--cream)}
+h1,h2,h3{font-family:Georgia,serif;color:var(--plum);line-height:1.25}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--plum)}
+:focus-visible{outline:3px solid var(--sage);outline-offset:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:.5rem;z-index:10}
+.site-header{background:var(--plum);color:#fff}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:.6rem 1rem;max-width:1100px;margin:auto}
+.brand{display:flex;align-items:center;gap:.6rem;color:#fff;text-decoration:none;font-family:Georgia,serif;font-size:1.3rem}
+.menu-toggle{background:var(--rose);color:var(--text);border:0;border-radius:6px;padding:.5rem 1rem;font-size:1rem}
+.nav-links{display:none;width:100%}.nav-links.open{display:block}
+.nav-links ul{list-style:none;margin:.5rem 0 0;padding:0;display:flex;flex-direction:column}
+.nav-links a{display:block;padding:.6rem .4rem;color:#fff;text-decoration:none}
+.nav-links a:hover,.nav-links a[aria-current="page"]{background:rgba(255,255,255,.18);border-radius:6px}
+.wrap{max-width:1100px;margin:auto;padding:1.5rem 1rem}
+.hero{background:linear-gradient(135deg,var(--rose),var(--cream));padding:3rem 1rem;text-align:center}
+.hero p{max-width:620px;margin:1rem auto}
+.btn{display:inline-block;background:var(--sage);color:#fff;border:0;border-radius:8px;padding:.7rem 1.4rem;font-size:1rem;text-decoration:none;cursor:pointer}
+.btn.small{padding:.4rem .9rem;font-size:.95rem}.btn:hover{background:var(--plum)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--gap)}
+.card{background:#fff;border:1px solid var(--rose);border-radius:10px;padding:1rem}
+.card figure,.split figure{margin:0 0 .6rem}
+.card img,.split img{border-radius:8px}
+.price{font-weight:700;color:var(--sage)}
+.ticks{list-style:none;padding:0}.ticks li::before{content:"\2713 ";color:var(--sage);font-weight:700}
+.tip{background:#fff;border-left:5px solid var(--rose);padding:.6rem 1rem;margin-top:1.5rem}
+.split{display:flex;flex-direction:column;gap:var(--gap)}
+.table-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:#fff}
+caption{text-align:left;font-weight:700;padding:.5rem 0}
+th,td{border:1px solid var(--rose);padding:.6rem;text-align:left}
+thead th{background:var(--plum);color:#fff}
+details{background:#fff;border:1px solid var(--rose);border-radius:8px;padding:.6rem 1rem;margin-bottom:.6rem}
+summary{cursor:pointer;font-weight:600}
+.field{display:flex;flex-direction:column;margin-bottom:.8rem}
+label{font-weight:600;margin-bottom:.25rem}
+input,select,textarea{width:100%;font:inherit;padding:.6rem;border:1px solid #8a7a8a;border-radius:6px;background:#fff}
+.site-footer{background:var(--text);color:#fff;padding:1.5rem 1rem;margin-top:2rem}
+.site-footer h2{color:var(--rose);font-size:1.1rem}.site-footer a{color:#fff}
+.footer-grid{display:flex;flex-wrap:wrap;gap:2rem;max-width:1100px;margin:auto}
+.footer-grid ul{list-style:none;padding:0}.note{max-width:1100px;margin:.5rem auto 0;font-size:.9rem}
+@media (min-width:720px){
+.menu-toggle{display:none}
+.nav-links{display:block;width:auto}
+.nav-links ul{flex-direction:row;margin:0;gap:.2rem}
+.split{flex-direction:row;align-items:flex-start}.split>*{flex:1}
+.hero{padding:4.5rem 1rem}
+}
