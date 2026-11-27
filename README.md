@@ -11,6 +11,14 @@ Course project for CSC-114 Introduction to ICT, BSCS-1C
 A catalogue website for Noor Hijabs with a shop page,
 fabric guide, FAQ and an order-inquiry form. No online payment.
 
+## Features
+- User-friendly navigation
+- Responsive Website layout
+- Product Catalogue
+- Fabric information guide
+- Frequently Asked Questions
+- Order inquiry form
+
 ## Pages
 Home, Shop, Fabric Guide, About, FAQ, Order Inquiry
 
