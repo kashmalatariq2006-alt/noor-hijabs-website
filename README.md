@@ -5,7 +5,7 @@ Course project for CSC-114 Introduction to ICT, BSCS-1C
 ## Team
 - Kashmala Tariq 01-134262-038 (leader)
 - Mahnoor Fareed 01-134262-043 (member)
-- (member)
+- Sawaira Salman 01-134262-158 (member)
 
 ## Purpose
 A catalogue website for Noor Hijabs with a shop page,
